@@ -114,11 +114,31 @@ namespace ElfParser
 
             switch (die.Tag)
             {
-                case DW_TAG.BaseType:
+                case DW_TAG.EnumerationType:
                     // Add size to variable
                     sizeDie = die.AttributeList.Find(a => a.Name == DW_AT.ByteSize);
                     varTree.ByteSize = sizeDie.Value[0];
 
+                    switch (varTree.ByteSize)
+                    {
+                        case 1:
+                            varTree.Type = "U8";
+                            break;
+                        case 2:
+                            varTree.Type = "U16";
+                            break;
+                        case 4:
+                            varTree.Type = "U32";
+                            break;
+                        default:
+                            throw new NotImplementedException("Unknown enum length!");
+                            break;
+                    }
+                    break;
+                case DW_TAG.BaseType:
+                    // Add size to variable
+                    sizeDie = die.AttributeList.Find(a => a.Name == DW_AT.ByteSize);
+                    varTree.ByteSize = sizeDie.Value[0];
                     break; // Reached bottom of tree
                 case DW_TAG.Typedef:
                     // Pointers aren't fetchable

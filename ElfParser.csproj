@@ -7,8 +7,8 @@
     <ProjectGuid>{D9BFAC67-02AE-4EC0-8829-5F8375D19C17}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DwarfParser</RootNamespace>
-    <AssemblyName>DwarfParser</AssemblyName>
+    <RootNamespace>ElfParser</RootNamespace>
+    <AssemblyName>ElfParser</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
