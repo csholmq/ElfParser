@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kISxJgDotpSh6EqYMTx//L433lN+VUC4eILGW1eeHyy6RRia5/b2Zwjv0mPlHI3mhBQeIgpLmHJd5c1Ep0Q0UA==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\ElfParser\\ElfParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sebastian Holmqvist\\.nuget\\packages\\elfsharp\\2.12.0\\elfsharp.2.12.0.nupkg.sha512",
+    "C:\\Users\\Sebastian Holmqvist\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sebastian Holmqvist\\.nuget\\packages\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers\\0.2.220602\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.2.220602.nupkg.sha512",
+    "C:\\Users\\Sebastian Holmqvist\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
