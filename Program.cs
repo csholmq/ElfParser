@@ -238,7 +238,7 @@ namespace ElfParser
                 case DW_TAG.Member:
                     // Add relative member address
                     var locAttr = die.AttributeList.Find(a => a.Name == DW_AT.DataMemberLocation);
-                    if (locAttr != null)
+                    if (locAttr != null && locAttr.Value.Length > 1)
                     {
                         var addr = new byte[4];
                         locAttr.Value.Skip(1).ToArray().CopyTo(addr, 0);
